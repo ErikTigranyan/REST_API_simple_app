@@ -1,7 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.engine import URL
+from sqlalchemy.ext.declarative import declarative_base
 
+#creating base class for our models which is an instance of Base.metadata that allows us to automatically registrate our inherited classes create themselves as db tables
+Base = declarative_base()
 #creating url in order to connect to db server
 url = URL.create (
     drivername = "mysql+mysqlconnector",
