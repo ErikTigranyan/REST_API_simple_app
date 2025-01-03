@@ -4,7 +4,7 @@ from sqlalchemy import Column, Integer, String, Date, DECIMAL, ForeignKey
 class Artist(Base):
     __tablename__ = "artist"
 
-    id = Column(Integer, primary_key = True, index = True)
+    artist_id = Column(Integer, primary_key = True, index = True)
     full_name = Column(String, nullable = False)
     dob = Column(Date, nullable = False)
     country = Column(String, nullable = False)
@@ -13,7 +13,7 @@ class Artist(Base):
 class Storage(Base):
     __tablename__ = "storage"
 
-    id = Column(Integer, primary_key = True, index = True)
+    storage_id = Column(Integer, primary_key = True, index = True)
     storage_name = Column(String, nullable = False)
     storage_type = Column(String, nullable = False)
     storage_country = Column(String, nullable = False)
@@ -22,7 +22,7 @@ class Storage(Base):
 class Artwork(Base):
     __tablename__ = "artwork"
 
-    id = Column(Integer, primary_key = True, index = True)
+    artwork_id = Column(Integer, primary_key = True, index = True)
     artwork_name = Column(String, nullable = False)
     artwork_type = Column(String, nullable = False)
     material = Column(String, nullable = True)
