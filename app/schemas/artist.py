@@ -1,10 +1,10 @@
 from pydantic import BaseModel
 from typing import Optional
-from sqlalchemy import Date
+from datetime import date
 
 class ArtistBase(BaseModel):
     full_name: str
-    dob: Optional[Date]
+    dob: Optional[date]
     country: Optional[str]
     activity: Optional[str]
 

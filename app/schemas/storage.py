@@ -1,13 +1,13 @@
 from pydantic import BaseModel
 from typing import Optional
-from sqlalchemy import Date
+from datetime import date
 
 class StorageBase(BaseModel):
     storage_name: str
     storage_type: Optional[str]
     storage_country: Optional[str]
     activity: Optional[str]
-    opening_date: Optional[Date]
+    opening_date: Optional[date]
 
 class StorageCreate(StorageBase):
     pass
