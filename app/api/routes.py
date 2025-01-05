@@ -5,6 +5,7 @@ from app.schemas import ArtistCreate, ArtistUpdate, StorageCreate, StorageUpdate
 from app.services.services import artist_crud, storage_crud, artwork_crud
 from typing import List
 from app.utils.logger import logger
+
 router = APIRouter()
 
 #Helper function to add routes dynamically

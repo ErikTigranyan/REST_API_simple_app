@@ -17,4 +17,5 @@ class ArtistUpdate(ArtistBase):
 class ArtistResponse(ArtistBase):
     artist_id: int
     class Config:
-        orm_mode = True
+        from_attributes = True
+        arbitrary_types_allowed = True
