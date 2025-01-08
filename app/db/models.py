@@ -26,7 +26,7 @@ class Artwork(Base):
     artwork_name = Column(String(200), nullable = False)
     artwork_type = Column(String(200), nullable = False)
     medium = Column(String(200), nullable = True)
-    price = Column(DECIMAL(10, 2), nullable = False)
+    price = Column(DECIMAL(10, 2), nullable = True)
     height = Column(DECIMAL(10, 2), nullable = False)
     width = Column(DECIMAL(10, 2), nullable = False)
     depth = Column(DECIMAL(10, 2), nullable = True)
