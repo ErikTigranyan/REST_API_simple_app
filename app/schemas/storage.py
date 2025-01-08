@@ -6,7 +6,6 @@ class StorageBase(BaseModel):
     storage_name: str
     storage_type: Optional[str]
     storage_country: Optional[str]
-    activity: Optional[str]
     opening_date: Optional[date]
 
 class StorageCreate(StorageBase):

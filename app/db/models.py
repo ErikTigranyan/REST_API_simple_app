@@ -8,7 +8,7 @@ class Artist(Base):
     full_name = Column(String(200), nullable = False)
     dob = Column(Date, nullable = False)
     country = Column(String(200), nullable = False)
-    activity = Column(String(200), nullable = False)
+    movement = Column(String(200), nullable = False)
 
 class Storage(Base):
     __tablename__ = "storage"
@@ -25,7 +25,7 @@ class Artwork(Base):
     artwork_id = Column(Integer, primary_key = True, index = True)
     artwork_name = Column(String(200), nullable = False)
     artwork_type = Column(String(200), nullable = False)
-    material = Column(String(200), nullable = True)
+    medium = Column(String(200), nullable = True)
     price = Column(DECIMAL(10, 2), nullable = False)
     height = Column(DECIMAL(10, 2), nullable = False)
     width = Column(DECIMAL(10, 2), nullable = False)

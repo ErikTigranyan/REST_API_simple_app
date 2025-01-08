@@ -5,7 +5,7 @@ from decimal import Decimal
 class ArtworkBase(BaseModel):
     artwork_name: str
     artwork_type: Optional[str]
-    material: Optional[str]
+    medium: Optional[str]
     price: Optional[Decimal]
     height: Optional[Decimal]
     width: Optional[Decimal]

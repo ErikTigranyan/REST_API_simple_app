@@ -6,7 +6,7 @@ class ArtistBase(BaseModel):
     full_name: str
     dob: Optional[date]
     country: Optional[str]
-    activity: Optional[str]
+    movement: Optional[str]
 
 class ArtistCreate(ArtistBase):
     pass
